@@ -4,11 +4,11 @@
 
 [![Switch controls for Bulma CSS Framework](https://justboil.me/images/bulma-switch-control/repository-preview-hi-res.png?v=1.1)](https://justboil.github.io/bulma-switch-control/)
 
-**Switch controls for Bulma CSS Framework** &mdash; Pure HTML & CSS/SCSS.
+**Switch controls for Bulma 1.0+** &mdash; Pure HTML & CSS/SCSS.
 
 * Free under MIT License
 * Pure HTML & CSS/SCSS
-* Built for Bulma CSS Framework
+* Built for Bulma 1.0+
 * No js framework dependencies
 * Ready-to-use CSS
 * SCSS sources with variables
@@ -41,11 +41,11 @@ $ npm i bulma-switch-control --save
 Use with scss
 
 ```scss
-/* Bulma Switch Control */
-@import "node_modules/bulma-switch-control/bulma-switch-control";
-
 /* Bulma */
 @import "node_modules/bulma/bulma";
+
+/* Bulma Switch Control */
+@import "node_modules/bulma-switch-control/bulma-switch-control";
 ```
 
 ### ... or use as CSS
@@ -54,11 +54,18 @@ You may just copy pre-compiled `main.css` or `main.min.css` file from the [repos
 
 ```html
 <!-- Bulma -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
 
 <!-- Bulma Switch Control -->
 <link rel="stylesheet" href="%SOME-LOCAL-PATH%/bulma-switch-control/css/main.min.css">
 ```
+
+
+### Bulma token override support
+
+This package now ships with Bulma-like fallback Sass tokens (`$colors`, `$radius`, `$grey-light`, etc.) so it works with Bulma 1.0+ and older pipelines.
+
+If your project defines Bulma variables before importing `bulma-switch-control`, those values are picked up automatically thanks to `!default` declarations.
 
 ## Usage samples
 

@@ -1,5 +1,5 @@
 .switch {
-  @extend %unselectable;
+  @extend %switch-unselectable;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -31,9 +31,6 @@
         $color: nth($pair, 1);
         &.is-#{$name}-passive, &:hover {
           background: $color;
-        }
-        &.input[type=checkbox] + &.check {
-          background: 'pink';
         }
       }
 
