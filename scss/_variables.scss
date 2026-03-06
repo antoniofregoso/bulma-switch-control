@@ -1,4 +1,46 @@
-@import "node_modules/bulma/sass/utilities/all";
+$white: #ffffff !default;
+$black: #0a0a0a !default;
+$grey: #7a7a7a !default;
+$grey-light: #dbdbdb !default;
+$background: $white !default;
+$primary: #00d1b2 !default;
+$radius: 0.375em !default;
+$radius-rounded: 9999px !default;
+$easing: ease-out !default;
+
+$colors: (
+  "white": ($white, $black),
+  "black": ($black, $white),
+  "light": (#f5f5f5, rgba($black, 0.7)),
+  "dark": (#363636, $white),
+  "primary": ($primary, $white),
+  "link": (#485fc7, $white),
+  "info": (#3e8ed0, $white),
+  "success": (#48c78e, $white),
+  "warning": (#ffe08a, rgba($black, 0.7)),
+  "danger": (#f14668, $white)
+) !default;
+
+%switch-unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin control-small {
+  font-size: 0.75rem;
+}
+
+@mixin control-medium {
+  font-size: 1.25rem;
+}
+
+@mixin control-large {
+  font-size: 1.5rem;
+}
 
 $speed-slow: 150ms !default;
 
